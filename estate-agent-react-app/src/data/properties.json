@@ -1,81 +1,88 @@
 {
   "properties": [
     {
-      "id": "prop1",
+      "id": "p1",
       "type": "House",
-      "bedrooms": 3,
       "price": 750000,
-      "tenure": "Freehold",
-      "description": "Attractive three bedroom semi-detached family home...",
-      "location": "Petts Wood Road, Petts Wood, Orpington BR5",
-      "picture": "images/prop1.jpg",
-      "added": { "month": "October", "day": 12, "year": 2025 }
-    },
-    {
-      "id": "prop2",
-      "type": "Flat",
-      "bedrooms": 2,
-      "price": 399995,
-      "tenure": "Leasehold",
-      "description": "Presented in excellent decorative order...",
-      "location": "Crofton Road Orpington BR6",
-      "picture": "images/prop2.jpg",
-      "added": { "month": "September", "day": 14, "year": 2025 }
-    },
-    {
-      "id": "prop3",
-      "type": "House",
       "bedrooms": 4,
-      "price": 850000,
-      "tenure": "Freehold",
-      "description": "Stunning detached property with large garden...",
-      "location": "High Street, Bromley BR1",
-      "picture": "images/prop3.jpg",
-      "added": { "month": "November", "day": 1, "year": 2025 }
+      "location": "Bromley BR1",
+      "postcode": "BR1",
+      "dateAdded": "2023-10-12",
+      "description": "Stunning 4-bedroom detached house with a large garden.",
+      "images": ["/images/house1.jpg", "/images/living1.jpg", "/images/kitchen1.jpg", "/images/bed1.jpg", "/images/bath1.jpg", "/images/garden1.jpg"],
+      "floorPlan": "/images/plan1.jpg"
     },
     {
-      "id": "prop4",
+      "id": "p2",
       "type": "Flat",
-      "bedrooms": 1,
-      "price": 250000,
-      "tenure": "Leasehold",
-      "description": "Modern city living apartment...",
-      "location": "Station Road, Sidcup DA15",
-      "picture": "images/prop4.jpg",
-      "added": { "month": "October", "day": 20, "year": 2025 }
-    },
-    {
-      "id": "prop5",
-      "type": "House",
-      "bedrooms": 5,
-      "price": 1200000,
-      "tenure": "Freehold",
-      "description": "Luxury estate with swimming pool...",
-      "location": "Chislehurst Road, Chislehurst BR7",
-      "picture": "images/prop5.jpg",
-      "added": { "month": "August", "day": 10, "year": 2025 }
-    },
-    {
-      "id": "prop6",
-      "type": "Flat",
+      "price": 350000,
       "bedrooms": 2,
-      "price": 450000,
-      "tenure": "Share of Freehold",
-      "description": "Spacious flat near the park...",
-      "location": "Rectory Road, Beckenham BR3",
-      "picture": "images/prop6.jpg",
-      "added": { "month": "December", "day": 5, "year": 2025 }
+      "location": "London NW1",
+      "postcode": "NW1",
+      "dateAdded": "2023-11-05",
+      "description": "Modern apartment close to Regents Park.",
+      "images": ["/images/flat1.jpg", "/images/living2.jpg", "/images/kitchen2.jpg", "/images/bed2.jpg", "/images/bath2.jpg", "/images/view1.jpg"],
+      "floorPlan": "/images/plan2.jpg"
     },
     {
-      "id": "prop7",
+      "id": "p3",
       "type": "House",
+      "price": 450000,
       "bedrooms": 3,
+      "location": "Croydon CR0",
+      "postcode": "CR0",
+      "dateAdded": "2023-09-15",
+      "description": "Perfect family starter home near schools.",
+      "images": ["/images/house2.jpg", "/images/living3.jpg", "/images/kitchen3.jpg", "/images/bed3.jpg", "/images/bath3.jpg", "/images/garden2.jpg"],
+      "floorPlan": "/images/plan3.jpg"
+    },
+    {
+      "id": "p4",
+      "type": "Flat",
+      "price": 500000,
+      "bedrooms": 1,
+      "location": "London SE1",
+      "postcode": "SE1",
+      "dateAdded": "2023-12-01",
+      "description": "Luxury riverside studio with balcony.",
+      "images": ["/images/flat2.jpg", "/images/living4.jpg", "/images/kitchen4.jpg", "/images/bed4.jpg", "/images/bath4.jpg", "/images/balcony1.jpg"],
+      "floorPlan": "/images/plan4.jpg"
+    },
+    {
+      "id": "p5",
+      "type": "House",
+      "price": 1200000,
+      "bedrooms": 5,
+      "location": "London SW1",
+      "postcode": "SW1",
+      "dateAdded": "2023-08-20",
+      "description": "Exclusive townhouse in the heart of the city.",
+      "images": ["/images/house3.jpg", "/images/living5.jpg", "/images/kitchen5.jpg", "/images/bed5.jpg", "/images/bath5.jpg", "/images/garden3.jpg"],
+      "floorPlan": "/images/plan5.jpg"
+    },
+    {
+      "id": "p6",
+      "type": "Flat",
+      "price": 425000,
+      "bedrooms": 2,
+      "location": "Stratford E15",
+      "postcode": "E15",
+      "dateAdded": "2023-10-25",
+      "description": "Contemporary flat with gym access.",
+      "images": ["/images/flat3.jpg", "/images/living6.jpg", "/images/kitchen6.jpg", "/images/bed6.jpg", "/images/bath6.jpg", "/images/view2.jpg"],
+      "floorPlan": "/images/plan6.jpg"
+    },
+    {
+      "id": "p7",
+      "type": "House",
       "price": 600000,
-      "tenure": "Freehold",
-      "description": "Perfect starter home for a young family...",
-      "location": "Main Road, Biggin Hill TN16",
-      "picture": "images/prop7.jpg",
-      "added": { "month": "November", "day": 15, "year": 2025 }
+      "bedrooms": 3,
+      "location": "Wimbledon SW19",
+      "postcode": "SW19",
+      "dateAdded": "2023-11-10",
+      "description": "Charming period cottage near the common.",
+      "images": ["/images/house4.jpg", "/images/living7.jpg", "/images/kitchen7.jpg", "/images/bed7.jpg", "/images/bath7.jpg", "/images/garden4.jpg"],
+      "floorPlan": "/images/plan7.jpg"
     }
   ]
 }

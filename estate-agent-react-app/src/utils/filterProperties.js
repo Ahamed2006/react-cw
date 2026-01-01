@@ -1,81 +1,26 @@
-{
-  "properties"; [
-    {
-      "id": "prop1",
-      "type": "House",
-      "bedrooms": 3,
-      "price": 750000,
-      "tenure": "Freehold",
-      "description": "Attractive three bedroom semi-detached family home...",
-      "location": "Petts Wood Road, Petts Wood, Orpington BR5",
-      "picture": "images/prop1.jpg",
-      "added": { "month": "October", "day": 12, "year": 2025 }
-    },
-    {
-      "id": "prop2",
-      "type": "Flat",
-      "bedrooms": 2,
-      "price": 399995,
-      "tenure": "Leasehold",
-      "description": "Presented in excellent decorative order...",
-      "location": "Crofton Road Orpington BR6",
-      "picture": "images/prop2.jpg",
-      "added": { "month": "September", "day": 14, "year": 2025 }
-    },
-    {
-      "id": "prop3",
-      "type": "House",
-      "bedrooms": 4,
-      "price": 850000,
-      "tenure": "Freehold",
-      "description": "Stunning detached property with large garden...",
-      "location": "High Street, Bromley BR1",
-      "picture": "images/prop3.jpg",
-      "added": { "month": "November", "day": 1, "year": 2025 }
-    },
-    {
-      "id": "prop4",
-      "type": "Flat",
-      "bedrooms": 1,
-      "price": 250000,
-      "tenure": "Leasehold",
-      "description": "Modern city living apartment...",
-      "location": "Station Road, Sidcup DA15",
-      "picture": "images/prop4.jpg",
-      "added": { "month": "October", "day": 20, "year": 2025 }
-    },
-    {
-      "id": "prop5",
-      "type": "House",
-      "bedrooms": 5,
-      "price": 1200000,
-      "tenure": "Freehold",
-      "description": "Luxury estate with swimming pool...",
-      "location": "Chislehurst Road, Chislehurst BR7",
-      "picture": "images/prop5.jpg",
-      "added": { "month": "August", "day": 10, "year": 2025 }
-    },
-    {
-      "id": "prop6",
-      "type": "Flat",
-      "bedrooms": 2,
-      "price": 450000,
-      "tenure": "Share of Freehold",
-      "description": "Spacious flat near the park...",
-      "location": "Rectory Road, Beckenham BR3",
-      "picture": "images/prop6.jpg",
-      "added": { "month": "December", "day": 5, "year": 2025 }
-    },
-    {
-      "id": "prop7",
-      "type": "House",
-      "bedrooms": 3,
-      "price": 600000,
-      "tenure": "Freehold",
-      "description": "Perfect starter home for a young family...",
-      "location": "Main Road, Biggin Hill TN16",
-      "picture": "images/prop7.jpg",
-      "added": { "month": "November", "day": 15, "year": 2025 }
+export const filterProperties = (properties, criteria) => {
+  return properties.filter(prop => {
+    // 1. Type
+    if (criteria.type && criteria.type !== 'any' && prop.type !== criteria.type) return false;
+    
+    // 2. Price
+    if (criteria.minPrice && prop.price < Number(criteria.minPrice)) return false;
+    if (criteria.maxPrice && prop.price > Number(criteria.maxPrice)) return false;
+    
+    // 3. Bedrooms
+    if (criteria.minBeds && prop.bedrooms < Number(criteria.minBeds)) return false;
+    if (criteria.maxBeds && prop.bedrooms > Number(criteria.maxBeds)) return false;
+    
+    // 4. Postcode (substring match)
+    if (criteria.postcode && !prop.location.toLowerCase().includes(criteria.postcode.toLowerCase())) return false;
+    
+    // 5. Date Added
+    if (criteria.dateFrom) {
+      const propDate = new Date(prop.dateAdded);
+      const filterDate = new Date(criteria.dateFrom);
+      if (propDate < filterDate) return false;
     }
-  ]
-}
+    
+    return true;
+  });
+};

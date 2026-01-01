@@ -1,0 +1,27 @@
+.footer {
+  background-color: #e0f2fe; /* Light cyan matching the navbar */
+  color: #0f172a;           /* Dark navy text */
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: auto;         /* Pushes footer to bottom of short pages */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-text {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 0;
+  opacity: 0.8;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+  .footer-text {
+    font-size: 0.85rem;
+  }
+}

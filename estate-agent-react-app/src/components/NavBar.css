@@ -1,0 +1,85 @@
+/* Container styling to match the light cyan background from your screenshot */
+.navbar {
+  background-color: #e0f2fe; /* Light cyan background */
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Logo styling with the serif font look */
+.navbar-logo a {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0f172a; /* Dark navy text */
+  text-decoration: none;
+  font-family: serif; 
+}
+
+/* Container for the central search bar */
+.navbar-search-container {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 5px 5px 5px 20px;
+  border-radius: 50px;
+  width: 40%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.navbar-search-input {
+  border: none;
+  flex: 1;
+  padding: 10px;
+  font-size: 0.9rem;
+  outline: none;
+  color: #64748b;
+}
+
+.navbar-search-button {
+  background: #0f172a; /* Dark button */
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Navigation links on the right */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.navbar-links a {
+  color: #0f172a;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Favourites Heart Icon styling */
+.fav-icon-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.fav-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #facc15; /* Yellow accent */
+  color: #0f172a;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
