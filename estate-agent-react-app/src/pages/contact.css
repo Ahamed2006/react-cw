@@ -1,41 +1,142 @@
-.contact-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.contact-container {
+  padding: 40px 20px;
+  /* CHANGE: Removed 1200px limit to fill the whole screen white */
+  max-width: none; 
+  /* CHANGE: Force the background to cover the full viewport width */
+  width: 100vw;
+  margin: 0;
+  height: calc(100vh - 160px); /* Adjust based on your Nav/Footer height */
   min-height: 80vh;
-  background-color: #f8f9fa;
-  padding: 20px;
+  overflow: hidden;
+  background-color: #ffffff; /* Entire page background is now white */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Keeps your content centered on the white background */
+  box-sizing: border-box;
 }
 
-.contact-container {
-  background: white;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+.contact-header {
   text-align: center;
-  max-width: 500px;
+  margin-bottom: 50px;
+}
+
+.contact-header h1 {
+  font-size: 3rem;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.contact-header p {
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr; 
+  gap: 40px;
+  align-items: start;
+  /* CHANGE: Limits the content width so cards don't touch the screen edges */
+  max-width: 1200px; 
   width: 100%;
 }
 
-.contact-container h1 {
-  color: #003049;
-  font-size: 2.5rem;
+/* Info Cards Styling */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-card {
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+  border: 2px solid #facc15; /* Yellow brand border */
+}
+
+.info-icon {
+  font-size: 1.8rem;
+  background: #fefce8;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.info-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #0f172a;
+}
+
+.info-card p {
+  margin: 5px 0 0 0;
+  color: #64748b;
+}
+
+/* Form Styling */
+.contact-form-container {
+  background: white;
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  border: 2px solid #facc15; /* Yellow brand border */
+}
+
+.form-group {
   margin-bottom: 20px;
 }
 
-.contact-details p {
-  font-size: 1.2rem;
-  color: #495057;
-  margin: 15px 0;
-  line-height: 1.6;
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #334155;
 }
 
-.contact-details strong {
-  color: #2563eb;
+.form-group input, 
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-family: inherit;
+  transition: border-color 0.2s;
 }
 
-/* Add a nice hover effect to the container */
-.contact-container:hover {
-  transform: translateY(-5px);
-  transition: transform 0.3s ease;
+.form-group input:focus, 
+.form-group textarea:focus {
+  outline: none;
+  border-color: #facc15; 
+}
+
+.btn-send {
+  width: 100%;
+  background-color: #0f172a; 
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-send:hover {
+  background-color: #facc15;
+  color: #0f172a;
+}
+
+@media (max-width: 800px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-container {
+    height: auto;
+    overflow-y: auto;
+  }
 }
