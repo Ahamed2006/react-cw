@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage';
 import SearchPage from './pages/SearchPage';
 import PropertyDetails from './pages/PropertyDetails';
 import ContactPage from './pages/ContactPage';
+import FavouritesPage from './pages/FavouritesPage'; // 1. Import the new page
 import data from './data/properties.json';
 import './App.css';
 
@@ -26,7 +27,9 @@ function App() {
 
   return (
     <div className="app-container">
-      <NavBar />
+      {/* 2. Pass the count to NavBar for the heart icon badge */}
+      <NavBar favouritesCount={favourites.length} />
+      
       <div className="content-wrap">
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -37,8 +40,17 @@ function App() {
                 properties={data.properties} 
                 favourites={favourites}
                 onAddFav={handleAddFav}
-                onRemoveFav={handleRemoveFav}
-                onClearFav={handleClearFav}
+              />
+            } 
+          />
+          {/* 3. New Route for the dedicated Favourites Page */}
+          <Route 
+            path="/favourites" 
+            element={
+              <FavouritesPage 
+                favourites={favourites} 
+                onRemoveFav={handleRemoveFav} 
+                onClearFav={handleClearFav} 
               />
             } 
           />

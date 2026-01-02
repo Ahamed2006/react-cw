@@ -6,6 +6,10 @@
   justify-content: space-between;
   align-items: center;
   font-family: 'Poppins', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #bae6fd;
 }
 
 /* Logo styling with the serif font look */
@@ -61,11 +65,17 @@
   font-size: 1rem;
 }
 
-/* Favourites Heart Icon styling */
+/* Favourites Heart Icon styling - Updated to work as a link */
 .fav-icon-container {
   position: relative;
   display: flex;
   align-items: center;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.fav-icon-container:hover {
+  transform: scale(1.1);
 }
 
 .fav-badge {
@@ -75,11 +85,12 @@
   background: #facc15; /* Yellow accent */
   color: #0f172a;
   border-radius: 50%;
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: bold;
+  border: 2px solid #e0f2fe; /* Matches navbar background for a clean look */
 }

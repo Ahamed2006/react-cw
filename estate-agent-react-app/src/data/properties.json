@@ -5,12 +5,12 @@
       "type": "House",
       "price": 750000,
       "bedrooms": 4,
-      "location": "Bromley BR1",
-      "postcode": "BR1",
+      "location": "Colombo",
+      "postcode": "",
       "dateAdded": "2023-10-12",
       "description": "Stunning 4-bedroom detached house with a large garden.",
-      "images": ["/images/house1.jpg", "/images/living1.jpg", "/images/kitchen1.jpg", "/images/bed1.jpg", "/images/bath1.jpg", "/images/garden1.jpg"],
-      "floorPlan": "/images/plan1.jpg"
+      "images": ["/images/p1-house.webp", "/images/p1-livingroom.webp", "/images/p1-kitchen.webp", "/images/p1-bedroom.webp", "/images/p1-bathroom.webp", "/images/p1-garden.webp"],
+      "floorPlan": "/images/p1-floorplan.webp"
     },
     {
       "id": "p2",
@@ -21,8 +21,8 @@
       "postcode": "NW1",
       "dateAdded": "2023-11-05",
       "description": "Modern apartment close to Regents Park.",
-      "images": ["/images/flat1.jpg", "/images/living2.jpg", "/images/kitchen2.jpg", "/images/bed2.jpg", "/images/bath2.jpg", "/images/view1.jpg"],
-      "floorPlan": "/images/plan2.jpg"
+      "images": ["/images/p2-flat.webp", "/images/p2-livingroom.webp", "/images/p2-kitchen.webp", "/images/p2-bedroom.webp", "/images/p2-bathroom.webp", "/images/p2-garden.webp"],
+      "floorPlan": "/images/p2-floorplan.webp"
     },
     {
       "id": "p3",
@@ -33,8 +33,8 @@
       "postcode": "CR0",
       "dateAdded": "2023-09-15",
       "description": "Perfect family starter home near schools.",
-      "images": ["/images/house2.jpg", "/images/living3.jpg", "/images/kitchen3.jpg", "/images/bed3.jpg", "/images/bath3.jpg", "/images/garden2.jpg"],
-      "floorPlan": "/images/plan3.jpg"
+      "images": ["/images/p3-house.webp", "/images/p3-livingroom.webp", "/images/p3-kitchen.webp", "/images/p3-bedroom.webp", "/images/p3-bathroom.webp", "/images/p3-garden.webp"],
+      "floorPlan": "/images/p3-floorplan.webp"
     },
     {
       "id": "p4",
@@ -45,8 +45,8 @@
       "postcode": "SE1",
       "dateAdded": "2023-12-01",
       "description": "Luxury riverside studio with balcony.",
-      "images": ["/images/flat2.jpg", "/images/living4.jpg", "/images/kitchen4.jpg", "/images/bed4.jpg", "/images/bath4.jpg", "/images/balcony1.jpg"],
-      "floorPlan": "/images/plan4.jpg"
+      "images": ["/images/p4-flat.jpg", "/images/p4-livingroom.webp", "/images/p4-kitchen.webp", "/images/p4-bedroom.webp", "/images/p4-bathroom.webp", "/images/p4-garden.jpg"],
+      "floorPlan": "/images/p4-floorplan.webp"
     },
     {
       "id": "p5",
@@ -57,8 +57,8 @@
       "postcode": "SW1",
       "dateAdded": "2023-08-20",
       "description": "Exclusive townhouse in the heart of the city.",
-      "images": ["/images/house3.jpg", "/images/living5.jpg", "/images/kitchen5.jpg", "/images/bed5.jpg", "/images/bath5.jpg", "/images/garden3.jpg"],
-      "floorPlan": "/images/plan5.jpg"
+      "images": ["/images/p5-house.webp", "/images/p5-livingroom.webp", "/images/p5-kitchen.webp", "/images/p5-bedroom.webp", "/images/p5-bathroom.webp", "/images/p5-garden.webp"],
+      "floorPlan": "/images/p5-floorplan.webp"
     },
     {
       "id": "p6",
@@ -69,8 +69,8 @@
       "postcode": "E15",
       "dateAdded": "2023-10-25",
       "description": "Contemporary flat with gym access.",
-      "images": ["/images/flat3.jpg", "/images/living6.jpg", "/images/kitchen6.jpg", "/images/bed6.jpg", "/images/bath6.jpg", "/images/view2.jpg"],
-      "floorPlan": "/images/plan6.jpg"
+      "images": ["/images/p6-flat.webp", "/images/p6-livingroom.webp", "/images/p6-kitchen.webp", "/images/p6-bedroom.webp", "/images/p6-bathroom.webp", "/images/p6-garden.webp"],
+      "floorPlan": "/images/p6-floorplan.webp"
     },
     {
       "id": "p7",
@@ -81,8 +81,8 @@
       "postcode": "SW19",
       "dateAdded": "2023-11-10",
       "description": "Charming period cottage near the common.",
-      "images": ["/images/house4.jpg", "/images/living7.jpg", "/images/kitchen7.jpg", "/images/bed7.jpg", "/images/bath7.jpg", "/images/garden4.jpg"],
-      "floorPlan": "/images/plan7.jpg"
+      "images": ["/images/p7-house.webp", "/images/p7-livingroom.webp", "/images/p7-kitchen.webp", "/images/p7-bedroom.webp", "/images/p7-bathroom.webp", "/images/p7-garden.webp"],
+      "floorPlan": "/images/p7-floorplan.webp"
     }
   ]
 }

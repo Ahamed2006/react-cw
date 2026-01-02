@@ -9,6 +9,7 @@
   --card-white: #ffffff;
 }
 
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg-cyan); /* Sets the global background */

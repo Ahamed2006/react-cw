@@ -1,0 +1,109 @@
+/* Import the font to match modern contact pages */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+.fav-wrapper-clean {
+  background-color: #ffffff !important;
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Inter', sans-serif; /* Clean Sans-Serif font */
+}
+
+.fav-container-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 5% 100px;
+}
+
+/* Header Typography Styles */
+.fav-modern-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 60px;
+}
+
+.eyebrow-text {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.85rem;
+  color: #64748b; /* Slate Gray */
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.main-heading {
+  font-size: 3rem;
+  color: #0f172a; /* Midnight Navy */
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.accent-line {
+  width: 60px;
+  height: 4px;
+  background-color: #3b82f6; /* Modern Blue Accent */
+  margin-top: 15px;
+  border-radius: 2px;
+}
+
+.count-text {
+  color: #475569;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  text-align: right;
+}
+
+/* Clear Button - Minimal Modern */
+.clear-btn-modern {
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  padding: 8px 18px;
+  border-radius: 6px;
+  color: #ef4444;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.clear-btn-modern:hover {
+  background: #fee2e2;
+  border-color: #fecaca;
+}
+
+/* Grid Layout */
+.property-grid-modern {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+/* Empty State Styling */
+.empty-state-modern {
+  text-align: center;
+  padding: 120px 0;
+  border-top: 1px solid #f1f5f9;
+}
+
+.empty-state-modern h2 {
+  font-size: 1.8rem;
+  color: #0f172a;
+}
+
+.browse-btn-modern {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 40px;
+  background: #facc15;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+.browse-btn-modern:hover {
+  transform: translateY(-2px);
+}
