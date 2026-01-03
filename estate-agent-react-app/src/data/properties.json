@@ -8,7 +8,8 @@
       "location": "Kensington W8",
       "postcode": "W8 5TT",
       "dateAdded": "2023-10-12",
-      "description": "Stunning 4-bedroom detached house with a large garden.",
+      "features": ["Large Private Garden", "Off-street Parking", "Newly Renovated Kitchen", "En-suite Master Bedroom"],
+      "description": "A masterclass in urban elegance. This stunning detached residence captures the timeless spirit of Kensington while offering a sleek, contemporary interior.\n\nBathed in natural light, the expansive living areas flow seamlessly into a meticulously landscaped garden—a rare sanctuary in the heart of the city.\n\nWhether you are hosting a summer garden party or enjoying a quiet evening in the designer kitchen, this home is built for those who appreciate the finer details.",
       "images": ["/images/p1-house.webp", "/images/p1-livingroom.webp", "/images/p1-kitchen.webp", "/images/p1-bedroom.webp", "/images/p1-bathroom.webp", "/images/p1-garden.webp"],
       "floorPlan": "/images/p1-floorplan.webp"
     },
@@ -20,7 +21,8 @@
       "location": "London NW1",
       "postcode": "NW1",
       "dateAdded": "2023-11-05",
-      "description": "Modern apartment close to Regents Park.",
+      "features": ["Close to Regents Park", "High Ceilings", "Integrated Appliances", "Excellent Transport Links"],
+      "description": "Chic, central, and full of character. This two-bedroom gem is located just moments away from the lush greenery of Regents Park.\n\nWith high ceilings that create an airy atmosphere and bespoke finishes throughout, this flat offers a sophisticated sanctuary for the modern Londoner.\n\nIt is the perfect blend of metropolitan convenience and quiet comfort.",
       "images": ["/images/p2-flat.webp", "/images/p2-livingroom.webp", "/images/p2-kitchen.webp", "/images/p2-bedroom.webp", "/images/p2-bathroom.webp", "/images/p2-garden.webp"],
       "floorPlan": "/images/p2-floorplan.webp"
     },
@@ -32,7 +34,8 @@
       "location": "Croydon CR0",
       "postcode": "CR0",
       "dateAdded": "2023-09-15",
-      "description": "Perfect family starter home near schools.",
+      "features": ["Near Top-Rated Schools", "South-Facing Garden", "Garage Included", "Potential to Extend"],
+      "description": "Designed with family at its heart, this charming 3-bedroom home offers a bright and welcoming atmosphere in a friendly neighbourhood.\n\nThe spacious open-plan dining area is perfect for Sunday roasts, while the south-facing garden provides a sun-drenched playground for children and pets.\n\nLocated within a top-tier school catchment area, this is where your family's next chapter begins.",
       "images": ["/images/p3-house.webp", "/images/p3-livingroom.webp", "/images/p3-kitchen.webp", "/images/p3-bedroom.webp", "/images/p3-bathroom.webp", "/images/p3-garden.webp"],
       "floorPlan": "/images/p3-floorplan.webp"
     },
@@ -44,7 +47,8 @@
       "location": "London SE1",
       "postcode": "SE1",
       "dateAdded": "2023-12-01",
-      "description": "Luxury riverside studio with balcony.",
+      "features": ["Riverside Views", "24-Hour Concierge", "Private Balcony", "Rooftop Access"],
+      "description": "Rise with the sun over the Thames. This luxury riverside studio is an architectural triumph, offering floor-to-ceiling windows and a private balcony.\n\nEvery inch of this home has been optimized for high-end living, from the smart-home technology to the marble-finished bathroom.\n\nThis isn't just a place to sleep; it's a front-row seat to the best skyline in the world.",
       "images": ["/images/p4-flat.jpg", "/images/p4-livingroom.webp", "/images/p4-kitchen.webp", "/images/p4-bedroom.webp", "/images/p4-bathroom.webp", "/images/p4-garden.jpg"],
       "floorPlan": "/images/p4-floorplan.webp"
     },
@@ -56,7 +60,8 @@
       "location": "London SW1",
       "postcode": "SW1",
       "dateAdded": "2023-08-20",
-      "description": "Exclusive townhouse in the heart of the city.",
+      "features": ["Home Cinema Room", "Wine Cellar", "Smart Home System", "Period Features"],
+      "description": "A rare gem of historic proportions. This magnificent 5-bedroom townhouse stands as a testament to London’s architectural heritage.\n\nSpread across four floors, the property features a grand drawing room with original fireplaces, a private cinema room, and a master suite that defines luxury.\n\nLiving here means being part of London’s elite history, with the city's most iconic landmarks right at your doorstep.",
       "images": ["/images/p5-house.webp", "/images/p5-livingroom.webp", "/images/p5-kitchen.webp", "/images/p5-bedroom.webp", "/images/p5-bathroom.webp", "/images/p5-garden.webp"],
       "floorPlan": "/images/p5-floorplan.webp"
     },
@@ -68,7 +73,8 @@
       "location": "Stratford E15",
       "postcode": "E15",
       "dateAdded": "2023-10-25",
-      "description": "Contemporary flat with gym access.",
+      "features": ["Residents Gym", "Underfloor Heating", "Secure Bike Storage", "Communal Terrace"],
+      "description": "The pulse of the Olympic legacy. This contemporary two-bedroom apartment offers a high-energy lifestyle in the heart of Stratford.\n\nWith sleek minimalist lines, underfloor heating, and access to a private residents' gym, this home is designed for those who work hard and play harder.\n\nThe communal terrace offers spectacular views of the Queen Elizabeth Olympic Park—the ultimate backdrop for your evening drinks.",
       "images": ["/images/p6-flat.webp", "/images/p6-livingroom.webp", "/images/p6-kitchen.webp", "/images/p6-bedroom.webp", "/images/p6-bathroom.webp", "/images/p6-garden.webp"],
       "floorPlan": "/images/p6-floorplan.webp"
     },
@@ -80,7 +86,8 @@
       "location": "Wimbledon SW19",
       "postcode": "SW19",
       "dateAdded": "2023-11-10",
-      "description": "Charming period cottage near the common.",
+      "features": ["Period Cottage", "Working Fireplace", "Close to Common", "Garden Studio"],
+      "description": "Step into a storybook. This enchanting period cottage near Wimbledon Common is bursting with rustic charm and soul.\n\nFrom the crackling fireplace in the cozy lounge to the sun-drenched garden studio, every corner of this house feels like home.\n\nIt is a peaceful retreat where the sounds of the city fade into the rustle of the leaves on the Common.",
       "images": ["/images/p7-house.webp", "/images/p7-livingroom.webp", "/images/p7-kitchen.webp", "/images/p7-bedroom.webp", "/images/p7-bathroom.webp", "/images/p7-garden.webp"],
       "floorPlan": "/images/p7-floorplan.webp"
     }

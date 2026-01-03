@@ -1,7 +1,7 @@
-/* Container styling to match the light cyan background from your screenshot */
+/* Container styling */
 .navbar {
-  background-color: #e0f2fe; /* Light cyan background */
-  padding: 1rem 5%;
+  background-color: #e0f2fe;
+  padding: 1rem 3%; /* Reduced padding to save horizontal space */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,87 +10,119 @@
   top: 0;
   z-index: 1000;
   border-bottom: 1px solid #bae6fd;
+  gap: 12px; /* Small gap to prevent elements from touching */
 }
 
-/* Logo styling with the serif font look */
+/* 1. Logo - Fixed size */
+.navbar-logo {
+  flex-shrink: 0;
+}
+
 .navbar-logo a {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 800;
-  color: #0f172a; /* Dark navy text */
+  color: #0f172a;
   text-decoration: none;
   font-family: serif; 
 }
 
-/* Container for the central search bar */
+/* 2. Search Container - THE FIX: This shrinks first */
 .navbar-search-container {
   display: flex;
   align-items: center;
   background: white;
-  padding: 5px 5px 5px 20px;
+  padding: 5px 5px 5px 15px;
   border-radius: 50px;
-  width: 40%;
+  flex: 1; /* Allows it to take up space AND shrink first */
+  max-width: 450px; 
+  min-width: 80px; /* Allows it to get very small to keep "Contact Us" visible */
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .navbar-search-input {
   border: none;
   flex: 1;
-  padding: 10px;
-  font-size: 0.9rem;
+  padding: 8px;
+  font-size: 0.85rem;
   outline: none;
   color: #64748b;
+  min-width: 0; /* Essential: allows the input field to shrink below default width */
 }
 
 .navbar-search-button {
-  background: #0f172a; /* Dark button */
+  background: #0f172a;
   color: white;
   border: none;
-  padding: 8px 20px;
+  padding: 6px 15px;
   border-radius: 30px;
   font-weight: 600;
   cursor: pointer;
+  flex-shrink: 0; /* Keeps the button text from getting squashed */
+  font-size: 0.8rem;
 }
 
-/* Navigation links on the right */
+/* 3. Navigation links - PROTECTED from disappearing */
 .navbar-links {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 15px;
+  flex-shrink: 0; /* FORCES the search bar to shrink instead of these links */
 }
 
 .navbar-links a {
   color: #0f172a;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  white-space: nowrap; /* Ensures "Contact Us" stays on one line */
 }
 
-/* Favourites Heart Icon styling - Updated to work as a link */
+/* Heart Icon */
+.nav-heart-icon {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: #0f172a;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.nav-heart-icon.active {
+  fill: #facc15;
+  stroke: #0f172a;
+}
+
 .fav-icon-container {
   position: relative;
   display: flex;
   align-items: center;
-  text-decoration: none;
-  transition: transform 0.2s ease;
 }
 
-.fav-icon-container:hover {
-  transform: scale(1.1);
-}
-
+/* Badge styling */
 .fav-badge {
   position: absolute;
   top: -8px;
   right: -10px;
-  background: #facc15; /* Yellow accent */
+  background: #facc15;
   color: #0f172a;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: bold;
-  border: 2px solid #e0f2fe; /* Matches navbar background for a clean look */
+  border: 2px solid #e0f2fe;
+}
+
+/* Mobile Breakpoint for tiny windows */
+@media (max-width: 650px) {
+  .navbar-logo a {
+    font-size: 1.5rem;
+  }
+  .navbar-links a {
+    font-size: 0.8rem; /* Shrink text slightly to fit better */
+  }
 }
