@@ -4,25 +4,13 @@ const FavouriteButton = ({ onClick, isFav }) => {
   return (
     <button 
       onClick={onClick} 
-      style={{
-        background: 'white',
-        border: '1px solid #e2e8f0',
-        width: '45px',
-        height: '45px',
-        borderRadius: '50%',
-        cursor: 'pointer',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        transition: 'all 0.2s ease',
-      }}
+      // We use a template literal to add the 'active' class if isFav is true
+      className={`fav-icon-btn ${isFav ? 'active' : ''}`}
+      title={isFav ? "Remove from Favourites" : "Save to Favourites"}
     >
       <svg 
-        width="22" 
-        height="22" 
+        className="heart-svg"
         viewBox="0 0 24 24" 
-        fill={isFav ? "#FF0000" : "none"} 
-        stroke={isFav ? "#FF0000" : "#64748b"} 
         strokeWidth="2.5" 
         strokeLinecap="round" 
         strokeLinejoin="round"

@@ -5,20 +5,15 @@ const ResultsList = ({ properties, onAddFav, favourites }) => {
   // Defensive check: if no properties exist, show a message
   if (!properties || properties.length === 0) {
     return (
-      <div style={{ padding: '20px', textAlign: 'center', color: '#666' }}>
-        <h3>No properties match your search.</h3>
-        <p>Try changing your filters to see more results.</p>
+      <div className="no-results-container">
+        <h3 className="no-results-title">No properties match your search.</h3>
+        <p className="no-results-text">Try changing your filters to see more results.</p>
       </div>
     );
   }
 
   return (
-    <div className="results-list" style={{ 
-      display: 'grid', 
-      gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', 
-      gap: '20px',
-      padding: '20px 0'
-    }}>
+    <div className="results-grid">
       {properties.map(property => {
         // Check if this specific property is already in favourites
         const isFav = favourites.some(f => f.id === property.id);

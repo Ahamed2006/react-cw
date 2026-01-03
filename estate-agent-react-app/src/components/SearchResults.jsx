@@ -2,7 +2,13 @@ import React from 'react';
 import PropertyCard from './PropertyCard';
 
 const SearchResults = ({ properties, onAddFav, favourites }) => {
-  if (properties.length === 0) return <p>No properties found matching your criteria.</p>;
+  if (properties.length === 0) {
+    return (
+      <div className="empty-results">
+        <p>No properties found matching your criteria.</p>
+      </div>
+    );
+  }
 
   return (
     <div className="results-grid">
@@ -17,4 +23,5 @@ const SearchResults = ({ properties, onAddFav, favourites }) => {
     </div>
   );
 };
+
 export default SearchResults;

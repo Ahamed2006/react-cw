@@ -7,27 +7,33 @@ import FavouriteButton from '../components/FavouriteButton';
 const PropertyDetails = ({ properties, onAddFav, favourites }) => {
   const { id } = useParams();
   const property = properties.find(p => p.id === id);
-  if (!property) return <div style={{ padding: '50px', textAlign: 'center' }}>Property not found</div>;
+  
+  if (!property) return <div className="not-found">Property not found</div>;
 
   const isFav = favourites.some(f => f.id === property.id);
 
   return (
-    <div className="details-page" style={{ maxWidth: '1200px', margin: '40px auto', padding: '0 20px' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '30px' }}>
-            <div>
-              <h1 style={{ margin: 0, fontSize: '2.5rem' }}>{property.type}</h1>
-              <p style={{ color: '#64748b', fontSize: '1.2rem' }}>{property.location}</p>
-            </div>
-            <div style={{ textAlign: 'right' }}>
-              <h2 style={{ color: '#0f172a', margin: 0 }}>£{property.price.toLocaleString()}</h2>
-              <FavouriteButton isFav={isFav} onClick={() => onAddFav(property)} />
-            </div>
-        </div>
-        <ImageGallery images={property.images} />
-        <div style={{ marginTop: '40px', background: 'white', padding: '30px', borderRadius: '24px', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}>
-            <PropertyTabs property={property} />
-        </div>
+    <div className="property-details-view">
+      <div className="details-container">
+          <div className="details-header">
+              <div className="header-left">
+                <h1 className="property-title">{property.type} in {property.location}</h1>
+                <p className="property-location-subtitle">{property.location}</p>
+              </div>
+              <div className="header-right">
+                <h2 className="property-price-large">£{property.price.toLocaleString()}</h2>
+                <FavouriteButton isFav={isFav} onClick={() => onAddFav(property)} />
+              </div>
+          </div>
+
+          <ImageGallery images={property.images} />
+
+          <div className="details-content-tabs">
+              <PropertyTabs property={property} />
+          </div>
+      </div>
     </div>
   );
 };
+
 export default PropertyDetails;
