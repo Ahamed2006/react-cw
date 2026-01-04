@@ -1,6 +1,6 @@
 /* Container styling */
 .navbar {
-  background-color: #e0f2fe;
+  background-color: #facc15;
   padding: 1rem 3%; /* Reduced padding to save horizontal space */
   display: flex;
   justify-content: space-between;
@@ -9,7 +9,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  border-bottom: 1px solid #bae6fd;
+ 
   gap: 12px; /* Small gap to prevent elements from touching */
 }
 
@@ -65,17 +65,18 @@
 .navbar-links {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 30px;
   flex-shrink: 0; /* FORCES the search bar to shrink instead of these links */
 }
 
-.navbar-links a {
+.navbar-links .contact-link {
   color: #0f172a;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 1.15rem;
   white-space: nowrap; /* Ensures "Contact Us" stays on one line */
 }
+
 
 /* Heart Icon */
 .nav-heart-icon {
