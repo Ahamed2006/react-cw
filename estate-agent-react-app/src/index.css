@@ -1,18 +1,20 @@
-/* Ensure the html and body allow for full-height layout */
+/* 1. Ensure the root elements take up the full screen height */
 html, body, #root {
   height: 100%;
   margin: 0;
-  background-color: #facc15; /* Forces the very bottom of the screen to match your footer */
+  /* Match the background to your brand yellow to hide the gap */
+  background-color: #facc15; 
 }
 
-/* Flexbox layout to push the footer to the bottom */
+/* 2. Setup the App container as a flexbox column */
 .app-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100vh; /* Minimum height is the full viewport */
 }
 
+/* 3. Make the main content area expand to push the footer to the bottom */
 .content-wrap {
-  flex: 1; /* This expands to fill all available space, pushing footer down */
-  background-color: white; /* Keeps your main content area clean white */
+  flex: 1; 
+  background-color: #ffffff; /* Keep the main content area white */
 }

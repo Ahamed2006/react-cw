@@ -10,12 +10,23 @@ import FavouritesPage from './pages/FavouritesPage';
 import data from './data/properties.json';
 import './App.css';
 
-// A simple component to handle 404 errors
+// Custom component to handle NOT_FOUND / 404 errors locally
 const NotFound = () => (
-  <div style={{ padding: '100px', textAlign: 'center' }}>
-    <h1>404 - Page Not Found</h1>
-    <p>The resource you are looking for does not exist.</p>
-    <a href="/" style={{ color: '#facc15', fontWeight: 'bold' }}>Return to Home</a>
+  <div style={{ padding: '100px 20px', textAlign: 'center', backgroundColor: 'white' }}>
+    <h1 style={{ color: '#1a1a1a' }}>404 - Page Not Found</h1>
+    <p>We couldn't find the page you're looking for.</p>
+    <a href="/" style={{ 
+      display: 'inline-block', 
+      marginTop: '20px', 
+      padding: '10px 20px', 
+      backgroundColor: '#facc15', 
+      color: '#000', 
+      textDecoration: 'none', 
+      borderRadius: '5px',
+      fontWeight: 'bold' 
+    }}>
+      Back to Home
+    </a>
   </div>
 );
 
@@ -38,7 +49,7 @@ function App() {
     <div className="app-container">
       <NavBar favouritesCount={favourites.length} />
       
-      {/* The main tag helps with the "bottom gap" fix in CSS */}
+      {/* Wrapper to ensure content pushes footer down */}
       <main className="content-wrap">
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -74,7 +85,7 @@ function App() {
           />
           <Route path="/contact" element={<ContactPage />} />
 
-          {/* FIX: Catch-all route to resolve 404 NOT_FOUND */}
+          {/* This route catches any undefined paths to prevent Deployment404 */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
