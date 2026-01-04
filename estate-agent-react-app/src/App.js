@@ -6,9 +6,18 @@ import HomePage from './pages/HomePage';
 import SearchPage from './pages/SearchPage';
 import PropertyDetails from './pages/PropertyDetails';
 import ContactPage from './pages/ContactPage';
-import FavouritesPage from './pages/FavouritesPage'; // 1. Import the new page
+import FavouritesPage from './pages/FavouritesPage';
 import data from './data/properties.json';
 import './App.css';
+
+// A simple component to handle 404 errors
+const NotFound = () => (
+  <div style={{ padding: '100px', textAlign: 'center' }}>
+    <h1>404 - Page Not Found</h1>
+    <p>The resource you are looking for does not exist.</p>
+    <a href="/" style={{ color: '#facc15', fontWeight: 'bold' }}>Return to Home</a>
+  </div>
+);
 
 function App() {
   const [favourites, setFavourites] = useState([]);
@@ -27,10 +36,10 @@ function App() {
 
   return (
     <div className="app-container">
-      {/* 2. Pass the count to NavBar for the heart icon badge */}
       <NavBar favouritesCount={favourites.length} />
       
-      <div className="content-wrap">
+      {/* The main tag helps with the "bottom gap" fix in CSS */}
+      <main className="content-wrap">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route 
@@ -43,7 +52,6 @@ function App() {
               />
             } 
           />
-          {/* 3. New Route for the dedicated Favourites Page */}
           <Route 
             path="/favourites" 
             element={
@@ -65,10 +73,15 @@ function App() {
             } 
           />
           <Route path="/contact" element={<ContactPage />} />
+
+          {/* FIX: Catch-all route to resolve 404 NOT_FOUND */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
-      </div>
+      </main>
+      
       <Footer />
     </div>
   );
 }
+
 export default App;
