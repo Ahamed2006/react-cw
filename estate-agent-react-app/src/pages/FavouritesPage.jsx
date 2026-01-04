@@ -10,7 +10,6 @@ const FavouritesPage = ({ favourites, onRemoveFav, onClearFav }) => {
         <header className="fav-modern-header">
           <div className="title-stack">
             <h1 className="main-heading">My Favourites</h1>
-
           </div>
           
           <div className="header-meta">

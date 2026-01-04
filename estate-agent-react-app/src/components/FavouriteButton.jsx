@@ -4,7 +4,7 @@ const FavouriteButton = ({ onClick, isFav }) => {
   return (
     <button 
       onClick={onClick} 
-      // We use a template literal to add the 'active' class if isFav is true
+      // used a template literal to add the 'active' class if isFav is true
       className={`fav-icon-btn ${isFav ? 'active' : ''}`}
       title={isFav ? "Remove from Favourites" : "Save to Favourites"}
     >
