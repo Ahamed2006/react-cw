@@ -1,9 +1,9 @@
 .footer {
   background-color: #facc15; /* Light cyan matching the navbar */
-  color: #0f172a;           /* Dark navy text */
+  color: #0f172a;          
   text-align: center;
   padding: 2rem 1rem;
-  margin-top: auto;         /* Pushes footer to bottom of short pages */
+  margin-top: auto;      
   width: 100%;
   box-sizing: border-box;
   border-top: #ca8a04;

@@ -2,7 +2,7 @@
 html, body, #root {
   height: 100%;
   margin: 0;
-  /* Match the background to your brand yellow to hide the gap */
+  /* Match the background to the brand yellow to hide the gap */
   background-color: #facc15; 
 }
 

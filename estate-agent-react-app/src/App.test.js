@@ -21,7 +21,7 @@ describe('Propify Application Tests', () => {
     expect(welcomeText).toBeInTheDocument();
   });
 
-  // TEST 2: Fixed Search Button (Matches your actual text)
+  // TEST 2: Fixed Search Button (Matches the actual text)
   test('2. contains the Start Searching button', () => {
     renderWithRouter(<App />);
     const searchBtn = screen.getByText(/Start Searching/i);
@@ -35,7 +35,7 @@ describe('Propify Application Tests', () => {
     expect(logo).toBeInTheDocument();
   });
 
-  // TEST 4: Footer Copyright (Matches your actual text)
+  // TEST 4: Footer Copyright (Matches the actual text)
   test('4. displays the correct coursework footer', () => {
     render(<Footer />);
     const footerText = screen.getByText(/Coursework project/i);
@@ -44,7 +44,7 @@ describe('Propify Application Tests', () => {
 
   // TEST 5: Favourites Icon Logic
   test('5. shows the correct number in the favourites icon', () => {
-    // We pass 3 to see if the badge shows the number 3
+    // passes 3 to see if the badge shows the number 3
     renderWithRouter(<NavBar favouritesCount={3} />);
     const badge = screen.getByText('3');
     expect(badge).toBeInTheDocument();
@@ -61,13 +61,13 @@ describe('Propify Application Tests', () => {
     expect(screen.getByText('5')).toBeInTheDocument();
   });
 
-// TEST 12: Critical Logic - Search Filtering Verification
-  test('12. Logic: Correctly identifies if a property price is within range', () => {
+  // TEST 7: Critical Logic - Search Filtering Verification
+  test('7. Logic: Correctly identifies if a property price is within range', () => {
     const mockProperty = { id: "1", type: "House", price: 550000 };
     const minPrice = 400000;
     const maxPrice = 600000;
 
-    // This simulates the logic inside your SearchPage filtering function
+    // This simulates the logic inside the SearchPage filtering function
     const isWithinRange = mockProperty.price >= minPrice && mockProperty.price <= maxPrice;
     
     expect(isWithinRange).toBe(true);

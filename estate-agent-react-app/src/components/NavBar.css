@@ -9,7 +9,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
- 
+
   gap: 12px; /* Small gap to prevent elements from touching */
 }
 
@@ -26,7 +26,7 @@
   font-family: serif; 
 }
 
-/* 2. Search Container - THE FIX: This shrinks first */
+/* 2. Search Container  */
 .navbar-search-container {
   display: flex;
   align-items: center;
@@ -61,12 +61,12 @@
   font-size: 0.8rem;
 }
 
-/* 3. Navigation links - PROTECTED from disappearing */
+/* 3. Navigation links  */
 .navbar-links {
   display: flex;
   align-items: center;
   gap: 30px;
-  flex-shrink: 0; /* FORCES the search bar to shrink instead of these links */
+  flex-shrink: 0; /*the search bar to shrink instead of these links */
 }
 
 .navbar-links .contact-link {
@@ -74,7 +74,7 @@
   text-decoration: none;
   font-weight: 600;
   font-size: 1.15rem;
-  white-space: nowrap; /* Ensures "Contact Us" stays on one line */
+  white-space: nowrap; 
 }
 
 
