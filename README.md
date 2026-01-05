@@ -5,8 +5,8 @@
 Propify is a React-based web application designed for a premium estate agency. It allows users to browse property listings, view detailed information, manage a favourites list, and search based on specific criteria.
 
 ## 🚀 Live Demo
-**Deployed URL:** [PASTE_YOUR_GITHUB_PAGES_LINK_HERE]
-**GitHub Repository:** [PASTE_YOUR_GITHUB_REPO_LINK_HERE]
+**Deployed URL:** https://react-cw-dusky.vercel.app/search
+**GitHub Repository:** https://github.com/Ahamed2006/react-cw.git
 
 ## ✨ Key Features
 * **Property Search:** Filter properties by type, price range, and location.
