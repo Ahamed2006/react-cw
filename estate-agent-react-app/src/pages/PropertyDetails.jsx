@@ -20,8 +20,7 @@ const PropertyDetails = ({ properties, onAddFav, favourites }) => {
 
         <div className="details-header">
           <div className="header-info">
-            <h1>{property.type} in {property.location}</h1>
-            <p className="location-text">{property.location}</p>
+            <h1>{property.type} in {property.location}</h1> 
           </div>
           <div className="header-actions">
             <span className="price">£{property.price.toLocaleString()}</span>
