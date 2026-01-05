@@ -16,5 +16,5 @@ html, body, #root {
 /* 3. Make the main content area expand to push the footer to the bottom */
 .content-wrap {
   flex: 1; 
-  background-color: #ffffff; /* Keep the main content area white */
+  background-color: #facc15; /* Keep the main content area white */
 }
